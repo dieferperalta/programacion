@@ -3,6 +3,10 @@
 int main() {
     // Declaración de variables
     float horas_trabajadas, valor_hora, sueldo;
+    char nombre[];	
+
+    printf("Ingrese el nombre del Empleado: ");
+    scanf("%s", &nombre);	
 
     // Solicitar al usuario ingresar las horas trabajadas y el valor por hora
     printf("Ingrese la cantidad de horas trabajadas: ");
@@ -15,7 +19,7 @@ int main() {
     sueldo = horas_trabajadas * valor_hora;
 
     // Mostrar el sueldo calculado
-    printf("El sueldo del empleado es: $%.2f\n", sueldo);
+    printf("El sueldo del '%s' es: $%.2f\n", nombre, sueldo);
 
     return 0;
 }
